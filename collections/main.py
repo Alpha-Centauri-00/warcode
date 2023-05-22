@@ -1,7 +1,3 @@
-
-
-
-
 def mul_by_n(lst, n):
     return [i * n for i in lst]
 
@@ -10,8 +6,6 @@ def compare(a, b):
     digits_a = [int(d) for d in str(a)]
     digits_b = [int(d) for d in str(b)]
 
-
-    
     common_digits = set(digits_a) & set(digits_b)
     
     similarity_percentage = len(common_digits) / 2 * 100
@@ -22,7 +16,6 @@ def compare(a, b):
         return f"{int(similarity_percentage)}%"
 
 
-
 def alternate(n, first_value,second_value):
     new_lis = []
     for i in range(n):
@@ -31,7 +24,6 @@ def alternate(n, first_value,second_value):
         else:
             new_lis.append(second_value)
     return new_lis
-
 
 
 def name_shuffler(str_):
@@ -69,9 +61,5 @@ def find_average(numbers):
     return int(sum(numbers) / len(numbers)) if numbers else 0
 
 
-
 def paperwork(n, m):
     return 0 if n < 0 or m < 0 else n * m
-
-
-    
