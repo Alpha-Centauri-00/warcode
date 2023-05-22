@@ -96,5 +96,9 @@ class TestMulbyN(unittest.TestCase):
         self.assertEqual(domain_name("https://youtube.com"), "youtube")
 
 
+    def test_instence_of_class(self):
+        g = Python("Bubba")
+        self.assertEqual(g.name,"Bubba",f"A class should be Called {g.name}!!!!")
+
 if __name__ == "__main__":
     unittest.main()
