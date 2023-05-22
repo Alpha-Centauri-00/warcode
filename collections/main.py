@@ -67,3 +67,9 @@ def paperwork(n, m):
 
 def domain_name(url):
     return url.split("//")[-1].replace("www.","").split(".")[0]
+
+class Python:
+    def __init__(self,name):
+        self.name = name
+    
+bubba = Python("bubba")
