@@ -100,5 +100,19 @@ class TestMulbyN(unittest.TestCase):
         g = Python("Bubba")
         self.assertEqual(g.name,"Bubba",f"A class should be Called {g.name}!!!!")
 
+
+    def test_even_or_odd(self):
+        self.assertEqual(even_or_odd(2), "Even")
+        self.assertEqual(even_or_odd(1), "Odd")
+        self.assertEqual(even_or_odd(0), "Even")
+        self.assertEqual(even_or_odd(1545452), "Even")
+        self.assertEqual(even_or_odd(7), "Odd")
+        self.assertEqual(even_or_odd(78), "Even")
+        self.assertEqual(even_or_odd(17), "Odd")
+        self.assertEqual(even_or_odd(74156741), "Odd")
+        self.assertEqual(even_or_odd(100000), "Even")
+        self.assertEqual(even_or_odd(-123), "Odd")
+        self.assertEqual(even_or_odd(-456), "Even")
+
 if __name__ == "__main__":
     unittest.main()

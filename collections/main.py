@@ -65,11 +65,17 @@ def find_average(numbers):
 def paperwork(n, m):
     return 0 if n < 0 or m < 0 else n * m
 
+
 def domain_name(url):
     return url.split("//")[-1].replace("www.","").split(".")[0]
+
 
 class Python:
     def __init__(self,name):
         self.name = name
-    
-bubba = Python("bubba")
+
+
+def even_or_odd(number):
+    if number %2 == 0:
+        return "Even"
+    return "Odd"
