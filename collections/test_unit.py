@@ -87,6 +87,14 @@ class TestMulbyN(unittest.TestCase):
         self.assertEqual(paperwork(5,-5),0)
         self.assertEqual(paperwork(-5,-5),0)
 
+    
+    def test_domain_name(self):
+        self.assertEqual(domain_name("https://google.com"), "google")
+        self.assertEqual(domain_name("http://google.co.jp"), "google")
+        self.assertEqual(domain_name("www.xakep.com"), "xakep")
+        self.assertEqual(domain_name("www.youtube.com"), "youtube")
+        self.assertEqual(domain_name("https://youtube.com"), "youtube")
+
 
 if __name__ == "__main__":
     unittest.main()
