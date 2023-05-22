@@ -79,3 +79,11 @@ def even_or_odd(number):
     if number %2 == 0:
         return "Even"
     return "Odd"
+
+def get_count(sentence):
+    
+    count = 0
+    for x in sentence.lower():
+        if x == "a" or x == "e" or x == "i" or x == "o" or x == "u":
+            count +=1
+    return count
