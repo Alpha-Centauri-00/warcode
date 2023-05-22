@@ -114,5 +114,14 @@ class TestMulbyN(unittest.TestCase):
         self.assertEqual(even_or_odd(-123), "Odd")
         self.assertEqual(even_or_odd(-456), "Even")
 
+    
+    def test_get_vowel_count(self):
+        self.assertEqual(get_count("Hallo"),2)
+        self.assertEqual(get_count("y"),0)
+        self.assertEqual(get_count("bcdfghjklmnpqrstvwxz y"),0)
+        self.assertEqual(get_count(""),0)
+        self.assertEqual(get_count("abracadabra"),5)
+
+
 if __name__ == "__main__":
     unittest.main()
