@@ -51,10 +51,9 @@ def set_reducer(inp):
 
 def validate_hello(greetings):
     messages = ["hello", "ciao", "salut", "hallo", "hola", "ahoj", "czesc"]
-    greetings = greetings.lower()
 
     for message in messages:
-        if message in greetings:
+        if message in greetings.lower():
             return True
     return False
 
