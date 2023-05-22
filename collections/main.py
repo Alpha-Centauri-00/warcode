@@ -1,4 +1,4 @@
-import re
+
 
 def mul_by_n(lst, n):
     return [i * n for i in lst]
@@ -67,7 +67,4 @@ def paperwork(n, m):
     return 0 if n < 0 or m < 0 else n * m
 
 def domain_name(url):
-    pattern = r'^(?:https?://)?(?:www\.)?([^./]+)'
-    matching = re.match(pattern,url)
-    domain = matching.group(1)
-    return domain
+    return url.split("//")[-1].replace("www.","").split(".")[0]
