@@ -87,3 +87,8 @@ def get_count(sentence):
         if x == "a" or x == "e" or x == "i" or x == "o" or x == "u":
             count +=1
     return count
+
+def disemvowel(string_):
+    
+    vowels = ["a","e","i","o","u"]
+    return "".join(x for x in string_ if x.lower() not in vowels)
