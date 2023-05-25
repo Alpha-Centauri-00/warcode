@@ -127,5 +127,11 @@ class TestMulbyN(unittest.TestCase):
         self.assertEqual(disemvowel("No offense but,\nYour writing is among the worst I've ever read"),"N ffns bt,\nYr wrtng s mng th wrst 'v vr rd")
         self.assertEqual(disemvowel("What are you, a communist?"),"Wht r y,  cmmnst?")
 
+    def test_aquare_didigis(self):
+        self.assertEqual(square_digits(765),493625)
+        self.assertEqual(square_digits(9119),811181)
+        self.assertEqual(square_digits(3212),9414)
+
+
 if __name__ == "__main__":
     unittest.main()
