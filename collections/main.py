@@ -92,3 +92,9 @@ def disemvowel(string_):
     
     vowels = ["a","e","i","o","u"]
     return "".join(x for x in string_ if x.lower() not in vowels)
+
+def square_digits(num: int) -> int:
+    
+    digits = [int(x) ** 2 for x in str(num)]
+    squared_str = ''.join(map(str, digits))
+    return int(squared_str)
