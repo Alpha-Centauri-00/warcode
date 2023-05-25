@@ -122,6 +122,10 @@ class TestMulbyN(unittest.TestCase):
         self.assertEqual(get_count(""),0)
         self.assertEqual(get_count("abracadabra"),5)
 
+    def test_disemvowel(self):
+        self.assertEqual(disemvowel("This website is for losers LOL!"),"Ths wbst s fr lsrs LL!")
+        self.assertEqual(disemvowel("No offense but,\nYour writing is among the worst I've ever read"),"N ffns bt,\nYr wrtng s mng th wrst 'v vr rd")
+        self.assertEqual(disemvowel("What are you, a communist?"),"Wht r y,  cmmnst?")
 
 if __name__ == "__main__":
     unittest.main()
