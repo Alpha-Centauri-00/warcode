@@ -98,3 +98,8 @@ def square_digits(num: int) -> int:
     digits = [int(x) ** 2 for x in str(num)]
     squared_str = ''.join(map(str, digits))
     return int(squared_str)
+
+def high_and_low(numbers):
+    listing = [num for num in numbers.split() if num.isdigit() or (num.startswith("-") and num[1:].isdigit())]
+    listing = sorted(listing, key=lambda x: (int(x) >= 0, int(x)))
+    return str(listing[-1])+ " "+ str(listing[0])
