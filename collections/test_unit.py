@@ -132,6 +132,10 @@ class TestMulbyN(unittest.TestCase):
         self.assertEqual(square_digits(9119),811181)
         self.assertEqual(square_digits(3212),9414)
 
+    def test_high_and_low(self):
+        self.assertEqual(high_and_low("8 3 -5 42 -1 0 0 -9 4 7 4 -4"),"42 -9")
+        self.assertEqual(high_and_low("1 2 3"),"3 1")
+
 
 if __name__ == "__main__":
     unittest.main()
