@@ -107,3 +107,12 @@ def high_and_low(numbers):
 def descending_order(num):
     each_digit = [int(digi) for digi in str(num)]
     return int("".join(map(str,(sorted(each_digit,reverse=True)))))
+
+def get_middle(s):
+    length = len(s)
+    middle_index = length // 2
+
+    if length % 2 == 0:
+        return s[middle_index - 1 : middle_index + 1]
+    else:
+        return s[middle_index]
