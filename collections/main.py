@@ -103,3 +103,7 @@ def high_and_low(numbers):
     listing = [num for num in numbers.split() if num.isdigit() or (num.startswith("-") and num[1:].isdigit())]
     listing = sorted(listing, key=lambda x: (int(x) >= 0, int(x)))
     return str(listing[-1])+ " "+ str(listing[0])
+
+def descending_order(num):
+    each_digit = [int(digi) for digi in str(num)]
+    return int("".join(map(str,(sorted(each_digit,reverse=True)))))
