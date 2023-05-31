@@ -144,5 +144,13 @@ class TestMulbyN(unittest.TestCase):
         self.assertEqual(descending_order(1021), 2110)
         self.assertEqual(descending_order(123456789), 987654321)
 
+    def test_get_middle(self):
+        self.assertEqual(get_middle("test"),"es")
+        self.assertEqual(get_middle("testing"),"t")
+        self.assertEqual(get_middle("middle"),"dd")
+        self.assertEqual(get_middle("A"),"A")
+        self.assertEqual(get_middle("of"),"of")
+
+
 if __name__ == "__main__":
     unittest.main()
