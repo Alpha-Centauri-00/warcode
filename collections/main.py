@@ -119,3 +119,11 @@ def get_middle(s):
     
 def positive_sum(arr):
     return [sum(x for x in arr if x > 0)][0]
+
+def is_square(num):
+    if num < 0:
+        return False
+    for i in range(int(num ** 0.5) + 1):
+        if i * i == num:
+            return True
+    return False
