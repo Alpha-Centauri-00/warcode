@@ -157,6 +157,13 @@ class TestMulbyN(unittest.TestCase):
         self.assertEqual(positive_sum([-1,2,3,4,-5]),9)
         self.assertEqual(positive_sum([-1,-2,-3,-4,-5]),0)
     
+    def test_is_square(self):
+        self.assertEqual(is_square(-1),False)
+        self.assertEqual(is_square(0),True)
+        self.assertEqual(is_square(3),False)
+        self.assertEqual(is_square(4),True)
+        self.assertEqual(is_square(25),True)
+        self.assertEqual(is_square(26),False)
 
 if __name__ == "__main__":
     unittest.main()
