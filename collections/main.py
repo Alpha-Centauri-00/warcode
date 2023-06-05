@@ -116,3 +116,6 @@ def get_middle(s):
         return s[middle_index - 1 : middle_index + 1]
     else:
         return s[middle_index]
+    
+def positive_sum(arr):
+    return [sum(x for x in arr if x > 0)][0]
