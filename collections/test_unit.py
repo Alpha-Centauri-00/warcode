@@ -151,6 +151,12 @@ class TestMulbyN(unittest.TestCase):
         self.assertEqual(get_middle("A"),"A")
         self.assertEqual(get_middle("of"),"of")
 
+    def test_positive_sum(self):
+        self.assertEqual(positive_sum([1,2,3,4,5]),15)
+        self.assertEqual(positive_sum([1,-2,3,4,5]),13)
+        self.assertEqual(positive_sum([-1,2,3,4,-5]),9)
+        self.assertEqual(positive_sum([-1,-2,-3,-4,-5]),0)
+    
 
 if __name__ == "__main__":
     unittest.main()
