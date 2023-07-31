@@ -165,5 +165,11 @@ class TestMulbyN(unittest.TestCase):
         self.assertEqual(is_square(25),True)
         self.assertEqual(is_square(26),False)
 
+    def test_index_capitals(self):
+        self.assertEqual(capitals("Test"),[0])
+        self.assertEqual(capitals("CodEWaRs"),[0,3,4,6])
+        
+
+
 if __name__ == "__main__":
     unittest.main()

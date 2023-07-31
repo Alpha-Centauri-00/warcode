@@ -127,3 +127,7 @@ def is_square(num):
         if i * i == num:
             return True
     return False
+
+def capitals(word):
+    
+    return [index for index,x in enumerate(word) if x ==x.upper()]
