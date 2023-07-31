@@ -168,7 +168,13 @@ class TestMulbyN(unittest.TestCase):
     def test_index_capitals(self):
         self.assertEqual(capitals("Test"),[0])
         self.assertEqual(capitals("CodEWaRs"),[0,3,4,6])
-        
+
+    def test_sorted_numbser(self):
+        self.assertEqual(sorted_numbser([1,2,3,10,5]), [1,2,3,5,10])
+        self.assertEqual(sorted_numbser(None), [])
+        self.assertEqual(sorted_numbser([]), [])
+        self.assertEqual(sorted_numbser([20,2,10]), [2,10,20])
+        self.assertEqual(sorted_numbser([2,20,10]), [2,10,20])
 
 
 if __name__ == "__main__":

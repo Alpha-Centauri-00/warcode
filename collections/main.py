@@ -131,3 +131,6 @@ def is_square(num):
 def capitals(word):
     
     return [index for index,x in enumerate(word) if x ==x.upper()]
+
+def sorted_numbser(nums):
+    return sorted(nums) if nums else []
