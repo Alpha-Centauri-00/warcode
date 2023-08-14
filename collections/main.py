@@ -134,3 +134,7 @@ def capitals(word):
 
 def sorted_numbser(nums):
     return sorted(nums) if nums else []
+
+def say_hello(name, city, state):
+    name_ = " ".join(name)
+    return f"Hello, {name_}! Welcome to {city}, {state}!"

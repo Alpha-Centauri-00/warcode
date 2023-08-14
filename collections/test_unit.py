@@ -176,6 +176,12 @@ class TestMulbyN(unittest.TestCase):
         self.assertEqual(sorted_numbser([20,2,10]), [2,10,20])
         self.assertEqual(sorted_numbser([2,20,10]), [2,10,20])
 
+    def test_say_hello_with_state(self):
+        self.assertEqual(say_hello(['John', 'Smith'], 'Phoenix', 'Arizona'), 'Hello, John Smith! Welcome to Phoenix, Arizona!')
+        self.assertEqual(say_hello(['Franklin','Delano','Roosevelt'], 'Chicago', 'Illinois'), 'Hello, Franklin Delano Roosevelt! Welcome to Chicago, Illinois!')
+        self.assertEqual(say_hello(['Marlo','Stanfield'],'Baltimore','Maryland'), 'Hello, Marlo Stanfield! Welcome to Baltimore, Maryland!')
+        self.assertEqual(say_hello(['Lupin','the','Third'],'Los Angeles','California'), 'Hello, Lupin the Third! Welcome to Los Angeles, California!')
+
 
 if __name__ == "__main__":
     unittest.main()
