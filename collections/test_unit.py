@@ -188,22 +188,9 @@ class TestMulbyN(unittest.TestCase):
         self.assertEqual(last_man_standing(100),54)
         self.assertEqual(last_man_standing(1000),510)
 
-import HtmlTestRunner
-import sys
 
-# if __name__ == "__main__":
-#     test_loader = unittest.main()
-    
 if __name__ == "__main__":
-    # create a test suite with the default test loader
-    suite = unittest.defaultTestLoader.loadTestsFromModule(sys.modules[__name__])
+    test_loader = unittest.main()
     
-    runner = HtmlTestRunner.HTMLTestRunner(output='report', 
-                                           report_name='MyReport', 
-                                           combine_reports=True,
-                                           report_title="this is a Title",
-                                           descriptions="This is a description",
-                                           )
-    
-    runner.run(suite)
+
 
