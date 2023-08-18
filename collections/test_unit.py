@@ -188,6 +188,9 @@ class TestMulbyN(unittest.TestCase):
         self.assertEqual(last_man_standing(100),54)
         self.assertEqual(last_man_standing(1000),510)
 
+    def test_tail_swap(self):
+        self.assertEqual(tail_swap(['abc:123', 'cde:456']),['abc:456', 'cde:123'])
+        self.assertEqual(tail_swap(['a:12345', '777:xyz']),['a:xyz'  , '777:12345'])
 
 if __name__ == "__main__":
     test_loader = unittest.main()

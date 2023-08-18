@@ -28,8 +28,8 @@ def alternate(n, first_value,second_value):
     return new_lis
 
 
-def name_shuffler(str_):
-    return " ".join((str_.split()[::-1])) 
+def name_shuffler(list_strings):
+    return " ".join((list_strings.split()[::-1])) 
 
 
 def set_reducer(inp):   
@@ -150,3 +150,10 @@ def last_man_standing(n):
             repeat = False
     
     return numbers[0]
+
+def tail_swap(list_strings):
+    lis = []
+    for x in list_strings:
+        colon = x.split(":")
+        lis.extend(colon)
+    return [lis[0]+ ":"+lis[3],lis[2]+ ":"+lis[1]]
