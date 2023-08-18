@@ -138,3 +138,15 @@ def sorted_numbser(nums):
 def say_hello(name, city, state):
     name_ = " ".join(name)
     return f"Hello, {name_}! Welcome to {city}, {state}!"
+
+def last_man_standing(n):
+  
+    numbers = list(range(1, n + 1))
+    repeat = True
+    while repeat:
+        numbers = numbers[1::2]
+        numbers = numbers[-1::-1]
+        if len(numbers) == 1:
+            repeat = False
+    
+    return numbers[0]

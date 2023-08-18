@@ -182,6 +182,12 @@ class TestMulbyN(unittest.TestCase):
         self.assertEqual(say_hello(['Marlo','Stanfield'],'Baltimore','Maryland'), 'Hello, Marlo Stanfield! Welcome to Baltimore, Maryland!')
         self.assertEqual(say_hello(['Lupin','the','Third'],'Los Angeles','California'), 'Hello, Lupin the Third! Welcome to Los Angeles, California!')
 
+    def test_last_man_standing(self):
+        self.assertEqual(last_man_standing(9), 6)
+        self.assertEqual(last_man_standing(10),8)
+        self.assertEqual(last_man_standing(100),54)
+        self.assertEqual(last_man_standing(1000),510)
+
 
 if __name__ == "__main__":
     unittest.main()
